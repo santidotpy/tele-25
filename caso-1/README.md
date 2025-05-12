@@ -1,0 +1,3 @@
+```markdown
+![Diagrama Caso 1](https://github.com/santidotpy/tele-25/blob/main/caso-1/caso1_diagrama.png)
+```
