@@ -1,1 +1,1 @@
-![Diagrama caso 1](/caso-1/caso1_diagrama.png)
+![Diagrama caso 1](./caso1_diagrama.png)
