@@ -1,19 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  name: metabase-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    spec.ingressClassName: nginx
-  name: metabase-ingress 
 spec:
+  ingressClassName: nginx
   rules:
-  - host: santiago-graffigna-web.my.kube.um.edu.ar
-    http:
-      paths:
-      - backend:
-          service:
-            name: metabase-service
-            port:
-              number: 80 
-        path: /
-        pathType: Prefix
+    - host: santiago-graffigna-web.my.kube.um.edu.ar
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: metabase-service
+                port:
+                  number: 80
